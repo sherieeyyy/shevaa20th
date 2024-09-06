@@ -1,0 +1,85 @@
+/* Reset default styling */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Container styling */
+.container {
+    text-align: center;
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading styling with animation */
+h1 {
+    font-size: 2.5em;
+    color: #ff69b4;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Image styling with animation */
+.birthday-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    animation: bounceIn 1s ease-out;
+}
+
+/* Footer styling */
+.footer {
+    font-size: 1.1em;
+    color: #ff69b4;
+    font-style: italic;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
